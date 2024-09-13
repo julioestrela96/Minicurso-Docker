@@ -100,3 +100,7 @@ $ docker build -f Dockerfile . -t web-server-test
 ```bash
 $ docker run — rm -p 8000:80 — name web-server-test web-server-test
 ```
+#Agora acesse http://localhost:8000 no navegador
+
+## Conclusão 
+#Esta atividade proporcionou uma introdução prática ao uso do Docker para criar e executar aplicações web. A experiência adquirida inclui a configuração de um ambiente básico de servidor web, a criação de um Dockerfile para empacotar a aplicação, e o uso de comandos Docker para construir e rodar containers. Esse conhecimento é fundamental para quem deseja explorar a construção e o gerenciamento de aplicações containerizadas.
