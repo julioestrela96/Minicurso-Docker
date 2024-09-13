@@ -95,8 +95,8 @@ ENTRYPOINT ["python3", "server.py"]
 ```
 #Executar os comandos:
 ```bash
-docker build -f Dockerfile . -t web-server-test
+$ docker build -f Dockerfile . -t web-server-test
 ```
 ```bash
-docker run — rm -p 8000:80 — name web-server-test web-server-test
+$ docker run — rm -p 8000:80 — name web-server-test web-server-test
 ```
