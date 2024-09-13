@@ -4,15 +4,15 @@
 
 1-Baixar o docker-compose versão 2.29.2
 ```bash
-$ sudo curl -L "https://github.com/docker/compose/releases/download/v2.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 2-Dar permissão de execução ao Docker Compose
 ```bash
-$ sudo chmod +x /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 ```
 3-Verificar se a instalação foi bem-sucedida
 ```bash
-$ docker-compose --version
+docker-compose --version
 ```
 
 ## Atividade 1
@@ -23,7 +23,7 @@ $ docker-compose --version
 
 #Rode o seguinte comando para verificar se o Docker está funcionando corretamente:
 ```bash
-$ docker --version
+docker --version
 ```
 *Trabalhando com Containers
 
@@ -31,7 +31,7 @@ $ docker --version
 
 #Use a imagem oficial do Docker para o Ubuntu e execute um container interativo. O comando a seguir irá baixar a imagem do Ubuntu, se ela não estiver presente, e iniciar um container:
 ```bash
-$ docker run -it ubuntu
+docker run -it ubuntu
 ```
 #Dentro do container, rode alguns comandos básicos como `ls`, `pwd`, e `cat` `/etc/os-release.`
 Para sair do container, digite `exit`.
@@ -40,33 +40,33 @@ Para sair do container, digite `exit`.
 
 #Verifique os containers ativos:
 ```bash
-$ docker ps
+docker ps
 ```
 #Verifique todos os containers (ativos e inativos):
 ```bash
-$ docker ps -a
+docker ps -a
 ```
 
 ### 4-Remover um Container
 
 #Para remover um container, primeiro anote o ID ou nome do container (usando docker ps -a) e remova-o:
 ```bash
-$ docker rm <container_id>
+docker rm <container_id>
 ```
 #Para remover uma imagem que não está sendo usada:
 ```bash
-$ docker rmi ubuntu
+docker rmi ubuntu
 ```
 
 ### 5-Criando sua Própria Imagem Docker
 
 #Crie uma pasta chamada meu_primeiro_docker: 
 ```bash
-$ mkdir meu_primeiro_docker
+mkdir meu_primeiro_docker
 ```
 #crie um arquivo chamado Dockerfile
 ```bash
-$ nano Dockerfile
+nano Dockerfile
 ```
 #Dentro do Dockerfile coloque o seguinte:
 ```bash
@@ -85,11 +85,11 @@ CMD ["echo", "Olá, Docker!"]
 
 #Navegue até a pasta onde está o Dockerfile e rode o comando para construir a imagem:
 ```bash
-$docker build -t meu_primeiro_docker .
+docker build -t meu_primeiro_docker .
 ```
 #Rodar sua Imagem. Após construir a imagem, rode o seguinte comando para criar um container a partir dela:
 ```bash
-$docker run meu_primeiro_docker
+docker run meu_primeiro_docker
 ```
 ## Conclusão
 
