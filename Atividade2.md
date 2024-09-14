@@ -14,11 +14,11 @@ Pré-requisitos:
 
 Criar uma pasta para colocar todos os arquivos.
 ```bash
-$ mkdir "nome da pasta"
+mkdir "nome da pasta"
 ```
 #Criar um arquivo index.html:
 ```bash
-$ nano index.html
+nano index.html
 ```
 #Dentro do arquivo coleque:
 ```bash
@@ -33,7 +33,7 @@ $ nano index.html
 
 #Na pasta utilizada, criar o arquivo webserver.py:
 ```bash
-$ nano webserver.py
+nano webserver.py
 ```
 #Dentro do arquivo "webserver.py", coloque o seguinte:
 ```bash
@@ -95,10 +95,10 @@ ENTRYPOINT ["python3", "server.py"]
 ```
 #Executar os comandos:
 ```bash
-$ docker build -f Dockerfile . -t web-server-test
+docker build -f Dockerfile . -t web-server-test
 ```
 ```bash
-$ docker run — rm -p 8000:80 — name web-server-test web-server-test
+docker run — rm -p 8000:80 — name web-server-test web-server-test
 ```
 #Agora acesse http://localhost:8000 no navegador
 
