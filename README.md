@@ -14,8 +14,6 @@
 
 ## Atividade 2: Configuração de um Servidor Web com Docker
 
-#Objetivo: Configurar um servidor web simples usando Docker.
-
 #Conteúdo: Criação de uma aplicação web com Flask, configuração de um Dockerfile, e execução de containers para um servidor web Python.
 
 ## Atividade 3: Construindo e Conectando um Ambiente de Aplicação Web Completo
@@ -23,3 +21,5 @@
 #Objetivo: Construir um ambiente de aplicação web completo com Docker, incluindo um servidor web Nginx, um banco de dados PostgreSQL e uma aplicação Flask.
 
 #Conteúdo: Configuração de PostgreSQL, criação de uma aplicação Flask, configuração do Nginx, e orquestração com Docker Compose.
+
+## Questionario final: https://forms.gle/N3ceWh2WB2ev3yNt6
